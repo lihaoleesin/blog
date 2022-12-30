@@ -8,7 +8,7 @@ const NavBar = () => {
   const links = [
     { id: 0, name: locale.NAV.INDEX, to: BLOG.path || '/', show: true },
     { id: 1, name: locale.NAV.ABOUT, to: '/about', show: BLOG.showAbout },
-    { id: 2, name: locale.NAV.RSS, to: '/feed', show: true },
+    // { id: 2, name: locale.NAV.RSS, to: '/feed', show: true },
     { id: 3, name: locale.NAV.SEARCH, to: '/search', show: true }
   ]
   return (
@@ -33,6 +33,7 @@ const NavBar = () => {
 }
 
 const Header = ({ navBarTitle, fullWidth }) => {
+  console.log(fullWidth)
   const useSticky = !BLOG.autoCollapsedNavBar
   const navRef = useRef(null)
   const sentinalRef = useRef([])
@@ -50,6 +51,7 @@ const Header = ({ navBarTitle, fullWidth }) => {
   useEffect(() => {
     const obvserver = new window.IntersectionObserver(handler)
     obvserver.observe(sentinalRef.current)
+    console.log(sentinalRef.current)
     // Don't touch this, I have no idea how it works XD
     // return () => {
     //   if (sentinalRef.current) obvserver.unobserve(sentinalRef.current)
