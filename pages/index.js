@@ -1,4 +1,5 @@
 import Container from '@/components/Container'
+import { ThemeProvider } from 'next-themes'
 import BlogPost from '@/components/BlogPost'
 import Pagination from '@/components/Pagination'
 import { getAllPosts } from '@/lib/notion'
@@ -21,12 +22,14 @@ export async function getStaticProps () {
 
 const blog = ({ postsToShow, page, showNext }) => {
   return (
-    <Container title={BLOG.title} description={BLOG.description}>
-      {postsToShow.map(post => (
-        <BlogPost key={post.id} post={post} />
-      ))}
-      {showNext && <Pagination page={page} showNext={showNext} />}
-    </Container>
+    <ThemeProvider>
+      <Container title={BLOG.title} description={BLOG.description}>
+        {postsToShow.map(post => (
+          <BlogPost key={post.id} post={post} />
+        ))}
+        {showNext && <Pagination page={page} showNext={showNext} />}
+      </Container>
+    </ThemeProvider>
   )
 }
 
