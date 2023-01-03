@@ -3,7 +3,7 @@ const BLOG = {
   author: 'leesin',
   email: 'lihao7364@gmail.com',
   link: 'https://leesin.cloud',
-  description: '随便写写',
+  description: '',
   lang: 'en-US', // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES']
   appearance: 'dark', // ['light', 'dark', 'auto'],
   font: 'sans-serif', // ['sans-serif', 'serif']

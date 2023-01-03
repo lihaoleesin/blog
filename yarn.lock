@@ -2358,6 +2358,11 @@
     "@corex/deepmerge" "^2.6.148"
     "minimist" "^1.2.5"
 
+"next-themes@^0.2.1":
+  "integrity" "sha512-B+AKNfYNIzh0vqQQKqQItTS8evEouKD7H5Hj3kmuPERwddR2TxvDSFZuTj6T7Jfn1oyeUyJMydPl1Bkxkh0W7A=="
+  "resolved" "https://registry.npmmirror.com/next-themes/-/next-themes-0.2.1.tgz"
+  "version" "0.2.1"
+
 "next@*", "next@^12.1.0", "next@>=10.2.0":
   "integrity" "sha512-s885kWvnIlxsUFHq9UGyIyLiuD0G3BUC/xrH0CEnH5lHEWkwQcHOORgbDF0hbrW9vr/7am4ETfX4A7M6DjrE7Q=="
   "resolved" "https://registry.npmmirror.com/next/-/next-12.1.0.tgz"
@@ -2937,6 +2942,11 @@
   "version" "3.4.4"
   dependencies:
     "hotkeys-js" "3.8.7"
+
+"react-icons@^4.7.1":
+  "integrity" "sha512-yHd3oKGMgm7zxo3EA7H2n7vxSoiGmHk5t6Ou4bXsfcgWyhfDKMpyKfhHR6Bjnn63c+YXBLBPUql9H4wPJM6sXw=="
+  "resolved" "https://registry.npmmirror.com/react-icons/-/react-icons-4.7.1.tgz"
+  "version" "4.7.1"
 
 "react-image@^4.0.3":
   "integrity" "sha512-19MUK9u1qaw9xys8XEsVkSpVhHctEBUeYFvrLTe1PN+4w5Co13AN2WA7xtBshPM6SthsOj77SlDrEAeOaJpf7g=="
